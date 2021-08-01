@@ -1,0 +1,16 @@
+{
+  "_comment": "This is a dummy file to satisfy the TS build. It is overwritten in the build with the real JSON file from `../keys`",
+  "firebaseConfig": {
+    "apiKey": "",
+    "authDomain": "",
+    "databaseURL": "",
+    "projectId": "",
+    "storageBucket": "",
+    "messagingSenderId": "",
+    "appId": ""
+  },
+  "firebaseAuth": {
+    "email": "",
+    "pw": ""
+  }
+}

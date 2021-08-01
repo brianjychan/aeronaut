@@ -1,0 +1,24 @@
+{
+  "LOGS_DIR": "./logs/",
+  "PHOTOS_DIR": "./photos/", // directory photos are stored in,
+  "VIDEOS_DIR": "./videos/",
+  // "MOTION_PERCENT_THRESHOLD": 0.042, // percent difference of pixels to trigger motion,
+  "HALT_FILE_PATH": "./halt.txt",
+  "NIGHT_OFF_FILE_PATH": "./goodnight.txt",
+  "CONSECUTIVE_CAMERA_ERROR_LIMIT": 4,
+  "ONLINE_UPDATE_INTERVAL": 240000, // update every 4 minutes,
+  "CONSECUTIVE_VIDEOS_RECORDED_LIMIT": 3, // limit to how many consecutive events to take of an ongoing event
+  // "OBJECT_CONFIDENCE_THRESHOLD": 0.76,
+  "CAMERA_OPTIONS": {
+    "quality": 20,
+    "width": 400,
+    "height": 300,
+    "time": 711
+  },
+  "VIDEO_OPTIONS": {
+    "width": 1080,
+    "height": 720,
+    "bitrate": 15000000,
+    "timeout": 15000
+  }
+}

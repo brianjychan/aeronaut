@@ -1,0 +1,104 @@
+.colorGray {
+    color: gray;
+}
+
+.colorBlue {
+    color: #1c6fc9
+}
+
+.colorError {
+    color: rgb(237, 112, 112)
+}
+
+.marginTop1 {
+    margin-top: 1rem;
+}
+
+.marginTop2 {
+    margin-top: 2rem;
+}
+
+.marginTop4 {
+    margin-top: 4rem;
+}
+
+p, h1, h2, h3 {
+    margin: 0rem;
+}
+
+.marginBottom0 {
+    margin-bottom: 0;
+}
+
+.marginBottom1 {
+    margin-bottom: 1rem;
+}
+
+.marginBottom2 {
+    margin-bottom: 2rem;
+}
+
+.marginBottom3 {
+    margin-bottom: 3rem;
+}
+
+.centerText {
+    text-align: center;
+    width: 100%;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.link {
+    color: #606060;
+}
+
+.link:hover {
+    color: rgb(41, 41, 41);
+    cursor: pointer
+}
+
+.fullWidth {
+    width: 100%;
+}
+
+.actionButton {
+    background-color: #cfe6ff;
+    border: 2px solid #1c6fc9;
+    border-radius: 20px;
+    color: black;
+    font-family: 'Red Hat Text', sans-serif;
+    padding: .5rem 2rem;
+}
+
+.actionButtonHover:hover {
+    background-color: rgb(187, 220, 255);
+    border: 2px solid #1c6fc9;
+}
+
+.actionButtonLoading {
+    background-color: #99c9fc;
+    border: 2px solid #99c9fc;
+    color: gray;
+}
+
+.sidePaddingLite {
+    padding-right: 8%;
+    padding-left: 8%;
+}
+
+.colorGreen {
+    color: rgb(0, 186, 0);
+}
+
+.noSidePadding {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.noMargin{
+    margin-right: 0;
+    margin-left: 0;
+}

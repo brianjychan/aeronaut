@@ -1,0 +1,32 @@
+{
+  "name": "aeronaut",
+  "version": "1.0.0",
+  "description": "guardian platform security camera",
+  "repository": {
+    "url": "https://github.com/brianjychan/guardian"
+  },
+  "main": "index.js",
+  "scripts": {
+    "build": "./build.sh"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^14.14.7",
+    "typescript": "^4.0.5"
+  },
+  "dependencies": {
+    "@google-cloud/vision": "^2.1.2",
+    "@types/rpi-gpio": "^2.1.1",
+    "file-base64": "^1.0.0",
+    "firebase": "^7.24.0",
+    "jimp": "^0.16.1",
+    "node-raspistill": "^1.0.3",
+    "onoff": "^6.0.1",
+    "raspivid": "^1.0.0",
+    "rpi-gpio": "^2.1.7",
+    "why-is-node-running": "^2.2.0",
+    "xhr2": "^0.2.0"
+  }
+}

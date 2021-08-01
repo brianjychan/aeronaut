@@ -1,0 +1,74 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // CONFIGS 
+
+    // Config
+    match /config/config {
+      // Allow all users to retrieve config
+      allow read: if request.auth.uid != null
+    }
+
+    match /config/seenMids {
+      allow update: if request.auth.uid != null
+    }
+
+    // CAMERAS
+
+    // Camera information
+    match /cameras/{targetUid} {
+      // Allow cameras to read their own info
+      allow read: if request.auth.uid == targetUid 
+
+      // Allow owners to read and update their cameras' info (turn off)
+      allow read, update: if request.auth.uid == resource.data.ownerUid
+
+      // Allow cameras to update online status
+      allow update: if request.auth.uid == targetUid 
+        && request.resource.data.ownerUid == resource.data.ownerUid // Enforce unchanged
+
+    }
+    // Camera logs
+    match /cameras/{targetCameraUid}/logs/{log} {
+      // Allow cameras to create and update their own logs
+      allow create, update: if request.auth.uid == targetCameraUid 
+    }
+
+    // USERS
+
+    // User information
+    match /users/{targetUid} {
+      // Allow users to read/ write their own information
+      allow read: if request.auth.uid == targetUid 
+
+      allow write: if request.auth.uid == targetUid 
+        && request.resource.data.uid == resource.data.uid // Enforce unchanged
+
+    }
+
+    function requestIsFromCameraOwnedBy(targetUid){
+      return targetUid == get(/databases/$(database)/documents/cameras/$(request.auth.uid)).data.ownerUid
+    }
+
+    // A user's events
+    match /users/{targetUid}/events/{doc} {
+      // Allow cameras to create/update events to their owner's events collection
+      allow create, update: if requestIsFromCameraOwnedBy(targetUid)
+
+      // Allow users to see their events
+      allow read, delete: if request.auth.uid == targetUid
+    }
+
+    // System information, stats 
+    match /users/{targetUid}/stats/{day} {
+      // Allow camers to:
+      // get: check if a new doc exists
+      // create: to create a new stats doc 
+      // update: send new stats updates
+      allow get, create, update: if requestIsFromCameraOwnedBy(targetUid)
+
+      // Allow users to see their stats
+      allow read: if request.auth.uid == targetUid
+    }
+  }
+}

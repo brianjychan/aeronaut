@@ -1,0 +1,20 @@
+.topNav {
+    background-color: rgb(247, 247, 247);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .06);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+
+.internalPadding {
+    padding-left: 30%;
+    padding-right: 30%;
+}
+
+.pointer {
+    cursor: pointer
+}
+
+.loginButton {
+    width: 100%;
+}

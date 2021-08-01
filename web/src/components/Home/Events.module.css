@@ -1,0 +1,31 @@
+.emptyCard {
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: .25rem;
+    padding: 4rem 2rem 5rem 2rem;
+}
+
+.deleteVideoButton {
+    padding: .5rem;
+    border-radius: 50%;
+}
+
+.deleteVideoButton:hover {
+    background-color: rgb(174, 174, 174);
+}
+
+.videoHolder {
+    width: 100%;
+    display: inline-block;
+}
+
+.noPhotoPreview {
+    color: gray;
+    padding: 3rem 3rem;
+    width: 100%;
+    border-bottom: 1px solid rgb(189, 189, 189);
+}
+
+.interestText{
+    font-weight: 600;
+    color: black;
+}

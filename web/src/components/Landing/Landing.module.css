@@ -1,0 +1,182 @@
+
+
+.marginBottom {
+    margin-bottom: 1rem;
+}
+
+.line {
+    width: 100%;
+    max-width: 3rem;
+    border-top: 1px solid gray;
+}
+
+.vertical {
+    height: 2rem;
+    border-right: 1px solid gray;
+    width: 1px;
+    margin: 1rem auto;
+}
+
+.sectionLine {
+    width: 3rem;
+    border-top: 1px solid gray;
+    margin: 3rem 0rem;
+    display: inline-block;
+}
+
+/* Top Nav */
+
+/* Hero Row */
+
+.largeText {
+    font-size: 50px;
+}
+
+.launchDealBox {
+    margin-top: 3rem;
+    border: 1px solid gray;
+    border-radius: .5rem;
+    padding: 1rem;
+}
+
+.rotateText {
+    color: black;
+    text-decoration: underline;
+    /* border-bottom: 3px solid rgb(109, 109, 109); */
+    height: 75px;
+}
+
+.demoImg {
+    width: 100%;
+    border-radius: 1rem;
+    border: 1px solid transparent;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+/* Middle Row */
+
+.slopesTop {
+    margin-top: 2rem;
+}
+
+.slopesTop, .slopesBottom {
+    width: 100%;
+    fill: green;
+    color: green;
+}
+
+.grayRow {
+    background-color: rgb(247, 247, 247);
+    margin-top: -1px;
+    margin-bottom: -10px;
+    padding: 2rem 0rem 6rem 0rem;
+}
+
+.modeLabel {
+    font-size: 18px;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    border-radius: 2rem;
+    padding: .5rem;
+}
+
+.boldLabel {
+    /* font-weight: 700; */
+    border: 3px solid rgb(170, 170, 170);
+}
+
+.switchArea {
+    margin-bottom: 3rem;
+    cursor: pointer;
+}
+
+.switchPadding {
+    padding-right: .5rem;
+    padding-left: .5rem;
+    margin-top: .5rem;
+}
+
+.switch {
+    border: 1px #adb5bd;
+}
+
+.switchPadding:hover {
+    cursor: pointer !important;
+}
+
+.switch {
+    cursor: pointer;
+}
+
+.howText {
+    padding-top: 2rem;
+}
+
+.stepNumber {
+    padding-bottom: 1rem;
+}
+
+/* Profile Focus */
+
+.profileImg {
+    margin: 2rem 2rem;
+    width: 100%;
+    /* min-width: 250px; */
+    position: relative;
+    z-index: 99;
+}
+
+.profileFocusText {
+    padding-right: 2rem;
+    padding-left: 2rem;
+    margin-top: 5rem;
+}
+
+.profilesPadding {
+    padding-left: 10rem;
+    margin-top: 0rem;
+}
+
+.profileFocusHeader {
+    margin-bottom: 2rem;
+}
+
+/* Bottom */
+
+.footer {
+    background-color: #E9ECEF;
+    padding: 1rem 0rem 4rem;
+}
+
+.example {
+    font-size: 1.4rem;
+}
+
+.featuresCol {
+    padding-right: 2rem;
+}
+
+.featureRow {
+    margin-bottom: .55rem;
+    border-top: 1px solid gray;
+}
+
+.feature {
+    margin-bottom: 1rem;
+}
+
+.featureTableLabel {
+    padding-top: .55rem;
+    padding-bottom: .55rem;
+}
+
+.featureTableTop {
+    border: none
+}

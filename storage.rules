@@ -1,0 +1,16 @@
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+    // TODO: upload under camera's own uid, then reference that in functions
+
+    // Upload photos and videos
+    match /users/{ruid}/events/{video} {
+       allow create: if request.auth.uid != null
+    }
+
+    // Upload logs
+    match /users/{ruid}/logs/{video} {
+       allow create: if request.auth.uid != null
+    }
+  }
+}
