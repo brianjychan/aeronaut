@@ -1,4 +1,4 @@
-# Aeronaut Platform
+# Aeronaut - DIY Raspberry Pi Smart Doorbell
 
 Aeronaut is a DIY smart doorbell replicating the base functionality of products like Ring or Nest doorbell cameras. It's implemented using a Raspberry Pi Zero, GCP, and Telegram. 
 
